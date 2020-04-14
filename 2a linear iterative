@@ -1,0 +1,28 @@
+
+include<iostream>
+using namespace std;
+int main()
+{
+	int a[20],i,num,n,flag=0,pos;
+	cout<<"Enter the size of array-";
+	cin>>n;
+	cout<<"Enter array elements-";
+	for(i=o;i<n;i++)
+	cin>>a[i];
+	cout<<"Enter the number to be searched:";
+	cin>>num;
+	for(i=0;i<n;i++)
+	{
+		if(a[i]==num)
+		{
+			flag=1;
+			pos=i+1;
+			break;
+		}
+	}
+	if(flag==0)
+	 cout<<"Number not found";
+	 else
+	 cout<<num<<"found at position"<<pos;
+	 return 0;
+}
