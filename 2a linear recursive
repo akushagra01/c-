@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int ls(int a[],int n,int item,int i)
+{
+	if(a[i]==item)return i+1;
+	if(i==n)return -1;
+	else ls(a,n,item,++i);
+}
+int main()
+{
+	int a[20],i,n,item;
+	cout<<"Enter array size"<<endl;
+	cin>>n;
+	cout<<"Enter elements"<<endl;
+	for(i=0;i<n;i++){
+		cin>>a[i];
+	}
+	cout<<"Enter the number to be searched"<<endl;
+	cin>>item;
+	int c=ls(a,n,item,0);
+	if(c==-1)
+	cout<<"not found"<<endl;
+	if(c>1)
+	cout<<"element found"<<endl;
+	return 0;
+}
