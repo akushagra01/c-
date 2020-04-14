@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int x,y,r=1;
+	cout<<"Enter x and y"<<endl;
+	cin>>x>>y;
+	while(y!=0){
+		r*=x;
+		--y;
+	}
+	cout<<"Result = "<<r<<endl;
+	return 0;
+}
