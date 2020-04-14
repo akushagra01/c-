@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int sum=0,x,y;
+	cout<<"Enter x and y"<<endl;
+	cin>>x>>y;
+	for(int i=1;i<=y;i++){
+		sum=sum+x;
+	}
+	cout<<x<<"*"<<y<<"="<<sum<<endl;
+	return 0;
+}
